@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import { Pagination } from './components/Pagination';
-import { getNumbers } from '.utils';
 
 export const App: React.FC = () => {
   const [perPage, setPerPage] = useState(5);
@@ -54,7 +53,7 @@ export const App: React.FC = () => {
         currentPage={currentPage}
         onPageChange={onPageChange}
       />
-    </div >
+    </div>
   );
 };
 
